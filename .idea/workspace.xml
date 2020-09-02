@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d604686-a954-4cd0-8f92-ff01bd5dfab9" name="Default Changelist" comment="" />
+    <list default="true" id="5d604686-a954-4cd0-8f92-ff01bd5dfab9" name="Default Changelist" comment="create project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +13,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gw2tYt0kNCIK0sD0AtTSoXnbK5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,7 +32,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,11 +48,24 @@
       <workItem from="1599012462445" duration="3309000" />
       <workItem from="1599026500002" duration="8000" />
       <workItem from="1599051003460" duration="6003000" />
+      <workItem from="1599077370672" duration="890000" />
     </task>
+    <task id="LOCAL-00001" summary="create project">
+      <created>1599077674065</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599077674065</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1599026505979">
@@ -56,14 +76,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="314" y="463" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599012336927" />
-    <state x="653" y="116" width="998" height="708" key="SettingsEditor" timestamp="1599051065557">
+    <state x="653" y="116" width="998" height="708" key="SettingsEditor" timestamp="1599077588546">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="653" y="116" width="998" height="708" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599051065557" />
+    <state x="653" y="116" width="998" height="708" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1599077588546" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1599077769853">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1599077769853" />
     <state x="565" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599054717182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="565" y="146" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1599054717182" />
+    <state x="761" y="448" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599077514964">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="761" y="448" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1599077514964" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1599057406651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

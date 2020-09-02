@@ -9,50 +9,71 @@ function config($optionValue, $defaultValue = NULL)
 {
 
     global $settings;
+    $localSetting=$settings;
 
     //решение №1
 
 
     $vals = explode('.', $optionValue); //$optionValue - разбиваем на массивы по делителю
 
-    $startVal=array_shift($vals); // для того чтобы мы смогли работать с воложеностю настроек
-    $current=$settings[$startVal];       // мы должны получить первый элемент массива и если такой элемент существует мы путем перебора и перезадания текущего элемента  проверем на существоание нужного нам элемента
-    $returnVal=null;                     // переменная отвечающая за сзачение настройки
-    if(isset($current)){
-        if(count($vals)){                // проверка на настройку без вложений при разбивке строки на массив и при извлечении первого  элемента мы  "отсекаем" от массива первый елемент
-            foreach ($vals as $val) {
-                if (isset( $current[$val])) {
-                    $current =$current[$val];
-                    $returnVal=$current;
 
-                } else {
-                    $returnVal=null;
-                    break;
-                }
-            }
+    $returnVal=null;
+
+    foreach ($vals as $val) {
+        if(isset($localSetting[$val])){
+            $localSetting=$localSetting[$val];
+            $returnVal=$localSetting;
         }else{
-            $returnVal=$current;
+            $returnVal=null;
+            break;
         }
-    }else{
-        $returnVal= null;
     }
-
-    if($defaultValue&&!$returnVal){
-        $vals1 = explode('.', $optionValue);//вновь получаем вложенный массив
-        $vals2=  array_reverse($vals1);// разворачиваем вложенность в обратном порядке
-//        $startVal2=array_shift($vals2); // для того чтобы мы смогли работать с воложеностю настроек
-        $data=array();
-//        $data[$startVal2]=$defaultValue;
+    var_dump($returnVal);
 
 
 
-            foreach ($vals2 as $item) {
-                $data=array($item=>$defaultValue);
-                $defaultValue=$data;
+
+    // для того чтобы мы смогли работать с воложеностю настроек
+//    $current=$settings[$startVal];       // мы должны получить первый элемент массива и если такой элемент существует мы путем перебора и перезадания текущего элемента  проверем на существоание нужного нам элемента
+//    $returnVal=null;                     // переменная отвечающая за сзачение настройки
+//    if(isset($current)){
+//        if(count($vals)){                // проверка на настройку без вложений при разбивке строки на массив и при извлечении первого  элемента мы  "отсекаем" от массива первый елемент
+//            foreach ($vals as $val) {
+//                if (isset( $current[$val])) {
+//                    $current =$current[$val];
+//                    $returnVal=$current;
 //
-            }
-            $merges=array_merge_recursive($settings,$data);
-    }
+//                } else {
+//                    $returnVal=null;
+//                    break;
+//                }
+//            }
+//        }else{
+//            $returnVal=$current;
+//        }
+//    }else{
+//        $returnVal= null;
+//    }
+
+
+
+
+//    if($defaultValue&&!$returnVal){
+//        $vals1 = explode('.', $optionValue);//вновь получаем вложенный массив
+//        $vals2=  array_reverse($vals1);// разворачиваем вложенность в обратном порядке
+////        $startVal2=array_shift($vals2); // для того чтобы мы смогли работать с воложеностю настроек
+//        $data=array();
+////        $data[$startVal2]=$defaultValue;
+//
+//
+//
+//            foreach ($vals2 as $item) {
+//                $data=array($item=>$defaultValue);
+//                $defaultValue=$data;
+////
+//            }
+//            $merges=array_merge_recursive($settings,$data);
+//    }
 
 
 
@@ -109,5 +130,5 @@ function config1($optionValue, $defaultValue = NULL)
 }
 
 
-config('app.services.resizer','555');
+config('app.services.resizerw');
 //config1('site_name');
